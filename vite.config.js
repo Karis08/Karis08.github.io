@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
  
 export default defineConfig({
   plugins: [react()],
-  base : "/karis08.github.io/"
+  base : "/karis_react_upload/"
 
 })
