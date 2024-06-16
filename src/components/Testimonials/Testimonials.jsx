@@ -73,7 +73,7 @@ const Testimonials = () => {
         {/* header section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
           <h1 data-aos="fade-up" className="text-3xl font-bold">
-            Testimonials
+            유저 한줄평
           </h1>
         </div>
 
