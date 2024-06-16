@@ -32,7 +32,8 @@ const Banner2 = () => {
             <img
               src={BannerImg}
               alt=""
-              className="sm:scale-125 sm:-translate-x-11 max-h-[300px] drop-shadow-[2px_10px_6px_rgba(0,0,0,0.50)] mx-auto"
+              className="max-w-full md:max-w-[400px] lg:max-w-[600px] mx-auto"
+              //className="sm:scale-125 sm:-translate-x-11 max-h-[300px] drop-shadow-[2px_10px_6px_rgba(0,0,0,0.50)] mx-auto"
             />
           </div>
         </div>
