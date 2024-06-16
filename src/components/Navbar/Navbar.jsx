@@ -9,17 +9,17 @@ export const Navlinks = [
   {
     id: 1,
     name: "신규 및 특집",
-    link: "/#services",
+    link: "#",
   },
   {
     id: 2,
     name: "구독",
-    link: "/#about",
+    link: "#",
   },
   {
     id: 3,
     name: "게임 뉴스",
-    link: "/#join",
+    link: "#",
   },
 ];
 const Navbar = () => {
