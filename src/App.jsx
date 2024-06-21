@@ -1,46 +1,22 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
-// Component import
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
+//라우트 작업하기//
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Main from "./components/Main/Main";
+
 import About from "./components/About/About";
-import About2 from "./components/About/About2";
-import Services from "./components/Services/Services";
-import AppStoreBanner from "./components/AppStoreBanner/AppStoreBanner";
-import Contact from "./components/Contact/Contact";
-import Testimonial from "./components/Testimonials/Testimonials";
-import Footer from "./components/Footer/Footer";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Banner2 from "./components/Banner2/Banner2";
+import Test2 from "./components/Test/Test2";
+import Test from "./components/Test/Test";
 
 const App = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      duration: 800,
-      easing: "ease-in-sine",
-      delay: 100,
-    });
-    AOS.refresh();
-  }, []);
   return (
-    <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <About />
-      <About2 />
-      <Banner2 />
-
-      <Services />
-      <AppStoreBanner />
-      <Testimonial />
-      <Contact />
-      <Footer />
-  
-    </div>
+    <Router basename="/karis_react_upload">
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/Test" element={<Test/>}/>
+        <Route path="/Test2" element={<Test2/>}/>
+        {/* 추가 라우트를 여기에 추가 */}
+      </Routes>
+    </Router>
   );
 };
 
