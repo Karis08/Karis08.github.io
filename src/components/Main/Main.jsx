@@ -34,7 +34,7 @@ const Main = () => {
       <About />
       <About2 />
       <Banner2 />
-      <Services />
+      <Services />  {/*요금제 설명*/ }
       <AppStoreBanner />
       <Testimonial />
       <Contact />

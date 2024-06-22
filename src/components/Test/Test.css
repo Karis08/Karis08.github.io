@@ -1,0 +1,33 @@
+.test-container {
+
+    background-color: black; /* Fill the empty space with black */
+
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0; /* Add some margin for spacing */
+  }
+  
+  .primary-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .primary-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .primary-btn h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  

@@ -3,9 +3,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./components/Main/Main";
 
-import About from "./components/About/About";
 import Test2 from "./components/Test/Test2";
 import Test from "./components/Test/Test";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
         <Route path="/" element={<Main />} />
         <Route path="/Test" element={<Test/>}/>
         <Route path="/Test2" element={<Test2/>}/>
+        <Route path="/Navbar" element={<Navbar/>}/>
+        <Route path="/Footer" element={<Footer/>}/>
         {/* 추가 라우트를 여기에 추가 */}
       </Routes>
     </Router>

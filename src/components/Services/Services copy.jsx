@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaCameraRetro } from "react-icons/fa";
 import { GiNotebook } from "react-icons/gi";
 import { SlNote } from "react-icons/sl";
+import "./Services_copy.css"; 
 
 const skillsData = [
   {
@@ -51,10 +52,25 @@ const skillsData = [
     aosDelay: "1000",
   },
 ];
-const Services = () => {
+
+const Services_copy = () => {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleSubscribe = () => {
+    setShowAlert(true);
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 3000); // 3초
+  };
+
   return (
     <>
       <span id="about"></span>
+      {showAlert && (
+        <div className="alert">
+          Game Heaven 가입 완료!
+        </div>
+      )}
       <div className="dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
         <div className="container">
           <div className="pb-12">
@@ -62,7 +78,7 @@ const Services = () => {
               data-aos="fade-up"
               className="text-3xl font-bold text-center sm:text-4xl"
             >
-              요금제 설명<br/>
+              요금제 가입하기<br/>
               Game <span className="text-primary">Heaven</span>
             </h1>
           </div>
@@ -72,27 +88,24 @@ const Services = () => {
                 key={skill.name}
                 data-aos="fade-up"
                 data-aos-delay={skill.aosDelay}
-                className="card text-center space-y-3 sm:space-y-6 p-4 sm:py-16 bg-gray-200 dark:bg-dark  hover:bg-primary/20 dark:hover:bg-primary/50 duration-300 text-black dark:text-white rounded-lg group "
+                className="card text-center space-y-3 sm:space-y-6 p-4 sm:py-16 bg-gray-200 dark:bg-dark hover:bg-primary/20 dark:hover:bg-primary/50 duration-300 text-black dark:text-white rounded-lg group"
               >
-                {/* <div className="grid place-items-center">{skill.icon}</div> */}
                 <h1 className="text-3xl font-bold">{skill.name}</h1>
                 <h1 className="text-center text-4xl font-semibold text-primary">
-                {skill.price} \
+                  {skill.price} \
                 </h1>
-
-                {skill.description.map((desc) => (
-                  <p>{desc}</p>
+                {skill.description.map((desc, index) => (
+                  <p key={index}>{desc}</p>
                 ))}
                 <p className="font-semibold text-2xl">
-                  {" "}
                   최종 가격 : {skill.duration}
                 </p>
-                <a
-                  href={skill.link}
-                  className="primary-btn mt-4 group-hover:scale-105  duration-200"
+                <button
+                  onClick={handleSubscribe}
+                  className="primary-btn mt-4 group-hover:scale-105 duration-200"
                 >
                   GameHeaven 가입하기
-                </a>
+                </button>
               </div>
             ))}
           </div>
@@ -102,4 +115,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Services_copy;

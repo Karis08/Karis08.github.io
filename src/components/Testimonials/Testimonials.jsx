@@ -1,30 +1,33 @@
 import React from "react";
 import Slider from "react-slick";
-
+import img1 from "../../assets/ele.png"
+import img2 from "../../assets/pub.png"
+import img3 from "../../assets/lol.png"
+import img5 from "../../assets/star.png"
 const TestimonialData = [
   {
     id: 1,
-    name: "Dilshad",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    //img:
+    name: "DogeMan",
+    text: "Elden Ring: GOAT",
+    img : img1
   },
   {
     id: 2,
-    name: "Prabhakar",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    //img:
+    name: "BestGamer",
+    text: "PUBG : This is the best game of my life",
+    img : img2
   },
   {
     id: 3,
-    name: "Sabir",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    //img:
+    name: "IMTHEBEST",
+    text: "LOL : 재밌어요~",
+    img: img3
   },
   {
     id: 5,
-    name: "Sachin",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    //img:
+    name: "Hans",
+    text: "Stardew Valley : 낭만있는 게임",
+    img : img5
   },
 ];
 
