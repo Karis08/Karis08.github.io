@@ -33,14 +33,14 @@ const AppStoreBanner = () => {
               data-aos="fade-up"
               className="flex flex-wrap justify-center items-center gap-4"
             >
-              <a href="#">
+              <a href="https://play.google.com/store/games?device=windows">
                 <img
                   src={PlayStoreImg}
                   alt=""
                   className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.apple.com/kr/app-store/">
                 <img
                   src={AppStoreImg}
                   alt=""

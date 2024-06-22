@@ -7,6 +7,7 @@ import Test2 from "./components/Test/Test2";
 import Test from "./components/Test/Test";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Contact from "./components/Contact/Contact";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/Test2" element={<Test2/>}/>
         <Route path="/Navbar" element={<Navbar/>}/>
         <Route path="/Footer" element={<Footer/>}/>
+        <Route path="Contact" element={<Contact/>}/>
         {/* 추가 라우트를 여기에 추가 */}
       </Routes>
     </Router>

@@ -1,24 +1,31 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // useNavigate 훅 import
+
 const Contact = () => {
+  const navigate = useNavigate(); // navigate 함수 초기화
+
+  const gototest = () => {
+    navigate("/Test"); // '/Test' 경로로 이동
+  };
+
   return (
     <>
       <span id="contact"></span>
       <div data-aos="zoom-in" className="dark:bg-black dark:text-white py-14">
-        <div className="container ">
+        <div className="container">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 bg-gray-100 dark:bg-dark py-8 px-6">
             <div className="col-span-2 space-y-3">
               <h1 className="text-3xl sm:text-4xl font-bold text-black/80 dark:text-white">
-                <span className="text-primary"> Game Pass로 더 많은 즐거움을 누리세요</span>{" "}
-                
+                <span className="text-primary">Game Pass로 더 많은 즐거움을 누리세요</span>{" "}
               </h1>
             </div>
             <div className="sm:grid sm:place-items-center">
-              <a
-                href="#"
-                className="inline-block font-semibold py-2 px-6 bg-primary text-white hover:bg-primary/80 duration-200 tracking-widest uppercase "
+              <button
+                onClick={gototest} // 요금제 가입 버튼 클릭 시 gototest 함수 실행
+                className="inline-block font-semibold py-2 px-6 bg-primary text-white hover:bg-primary/80 duration-200 tracking-widest uppercase"
               >
                 요금제 가입
-              </a>
+              </button>
             </div>
           </div>
         </div>
