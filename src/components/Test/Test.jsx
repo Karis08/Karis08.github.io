@@ -13,6 +13,8 @@ import Services_copy from "../Services/Services copy";
 import "./Test.css";
 
 
+
+
 const Test = () => {
   const navigate = useNavigate(); // navigate 함수 초기화
 
@@ -36,7 +38,7 @@ const Test = () => {
 
   return (
     <div className="test-container">
-      <Navbar />
+      <Navbar/>
       <Services_copy />
       <div className="button-container">
         <button className="primary-btn" onClick={gotomain}>

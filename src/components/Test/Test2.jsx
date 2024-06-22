@@ -9,9 +9,9 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Services_copy from "../Services/Services copy";
-import "./Test.css";
+import "./Test2.css";
 import Hero_copy from "../Hero/Hero_copy";
+
 
 
 const Test2 = () => {
@@ -37,7 +37,7 @@ const Test2 = () => {
 
   return (
     <div className="test-container">
-      <Navbar />
+      <Navbar/>
       <Hero_copy/>
       <div className="button-container">
         <button className="primary-btn" onClick={gotomain}>

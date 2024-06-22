@@ -2,12 +2,12 @@
 //라우트 작업하기//
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./components/Main/Main";
-
 import Test2 from "./components/Test/Test2";
 import Test from "./components/Test/Test";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
+
 
 const App = () => {
   return (
